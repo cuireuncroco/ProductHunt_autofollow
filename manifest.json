@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Product Hunt Follow",
+    "author": ["@frenchcooc","@cuireuncroco"],
+    "version": "0.1",
+    "content_scripts": [
+      {
+        "matches": ["https://www.producthunt.com/*"],
+        "js": ["follow.js"]
+      }
+    ],
+    "background": {
+        "scripts": ["profile-visit.js"],
+        "persistent": false
+    },
+    "permissions": ["tabs", "storage"]
+   }
